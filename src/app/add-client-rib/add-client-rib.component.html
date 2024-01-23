@@ -1,0 +1,74 @@
+<div class="h-full flex  justify-center mt-2">
+    <form action="" class="border w-1/2 p-4 shadow-md">
+        <div class="flex justify-around">
+            <div class="text-center mb-4 relative">
+                <input type="text" placeholder="Entrez le matricule " class="border-2 border-black px-10 rounded-full placeholder-black">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute top-1 right-4 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            </div>
+            <div class="">
+                <button class="bg-blue-300 p-2 rounded-full " id="btn" onclick="showModale()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                      </svg>                      
+                </button>
+            </div>
+        </div>
+      <div class="mb-4">
+        <h3 class="text-center mb-4 font-bold">Informations du client</h3>
+      <div class="m-2 flex flex-row justify-evenly">
+        <input type="text" class="border-b-2 focus:outline-none border-black placeholder-black" placeholder="Nom">
+        <input type="text" class="border-b-2 focus:outline-none border-black placeholder-black"  placeholder="Prénom">
+      </div>
+      <div class="m-2 flex flex-row justify-evenly">
+        <input type="text" class="border-b-2 focus:outline-none border-black placeholder-black" placeholder="Email">
+        <input type="text" class="border-b-2 focus:outline-none border-black placeholder-black" placeholder="Adresse">
+      </div>
+      <div class="m-2 flex flex-row justify-evenly">
+        <input type="text" class="border-b-2 focus:outline-none border-black placeholder-black" placeholder="Téléphone">
+        <input type="text" class="border-b-2 focus:outline-none border-black placeholder-black" placeholder="Matricule">
+      </div>
+      <div class="m-2 flex justify-center ">
+        <input type="text" class="border-b-2 focus:outline-none border-black placeholder-black" placeholder="Compte courant">
+      </div>
+      <hr class="m-4">
+      <div class="">
+        <h3 class="text-center mb-8 font-bold">Informations du compte</h3>
+       <!--
+
+        <div class="mb-4 flex justify-center">
+        <input type="text" class="border-b-2 focus:outline-none" placeholder="RIB">
+        </div>
+       --> 
+        <div class="mb-4 flex flex-row justify-evenly">
+          <select name="" id="" class="border-2">
+            <option value="">--Choisissez la banque---</option>
+            <option value="">Atlantique</option>
+            <option value="">BIND</option>
+          </select>
+          <input type="date"  class="border-2 p-1" readonly>
+        </div>
+        <div class="mt-10 flex justify-center">
+            <button class="bg-blue-600 rounded-full px-5 py-1  text-white hover:bg-blue-500 mx-2">Enregistrer</button>
+        </div>
+      </div>
+      </div>
+    </form>
+  </div>
+
+  <!--Modal-->
+  <div id="modal" class="modal h-screen w-full fixed top-0 left-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white rounded shadow-lg w1/3">
+        <h3 class="font-semibold">Liste des clients</h3>
+        <div class="p-3">
+            <select name="" id="">
+                <option value="">--------</option>
+                <option value="">MOUSSA Diallo</option>
+                <option value="">NDAO Junior</option>
+                <option value="">ASTOU FALL</option>
+            </select>
+        </div>
+    </div>
+  </div>
+
